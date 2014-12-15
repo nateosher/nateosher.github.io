@@ -1,0 +1,71 @@
+/* Styling for nateosher.com */
+
+body{
+    /* background-color: #0f444f; */
+}
+
+.header {
+    color: #3A4446;
+    font-size: 65px;
+    font-family: "Roboto";
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 75px;
+    height: 75px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.5s ease;
+}
+
+.change{
+    color: black;
+}
+
+.boxes{
+    /* display: inline-block; */
+}
+
+.boxes p {
+    position: relative;
+    text-align: center;
+    top: 90px;
+    transition: color 1s ease;
+}
+
+.boxChange{
+	background-color: black;
+	color: white;
+}
+
+#box1{
+    font-size: 35px;
+    font-family: 'roboto';
+    margin-top: 15px;
+    margin-left: 35%;
+    height: 300px;
+    width: 300px;
+    outline: solid 1px;
+    transition: background-color 1s ease;
+    display: inline-block;
+    float: left;
+}
+
+#box3{
+    font-size: 35px;
+    font-family: 'roboto';
+    margin-top: 315px;
+    height: 300px;
+    width: 300px;
+    outline: solid 1px;
+    transition: background-color 1s ease;
+    display: inline-block;
+}
+
+.babydiv{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: inline-block;
+    margin: 0px, 0px, 0px, 0px;
+}
