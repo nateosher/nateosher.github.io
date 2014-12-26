@@ -39,6 +39,7 @@ body{
 }
 
 #box1{
+    transition: background-color 1s ease;
     font-size: 35px;
     font-family: 'roboto';
     margin-top: 15px;
@@ -46,12 +47,31 @@ body{
     height: 350px;
     width: 350px;
     outline: solid 1px;
-    transition: background-color 1s ease;
-    display: inline-block;
     float: left;
 }
 
-#box3{
+#box2top{
+    margin-top: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: 36px;
+    width: 35px;
+    background-color: black;
+    display: inline;
+}
+
+#box2body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    display: inline;
+}
+
+/* #box3{
     font-size: 35px;
     font-family: 'roboto';
     margin-top: 365px;
@@ -61,6 +81,8 @@ body{
     transition: background-color 1s ease;
     display: inline-block;
 }
+
+*/
 
 /*
 .babydiv{
@@ -87,6 +109,5 @@ ul li{
     font-family: 'roboto';
     height: 150px;
     width: 125px;
-    display: inline-block;
     vertical-align: bottom;
 }
