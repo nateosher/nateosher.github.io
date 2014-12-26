@@ -71,29 +71,6 @@ body{
     display: inline;
 }
 
-/* #box3{
-    font-size: 35px;
-    font-family: 'roboto';
-    margin-top: 365px;
-    height: 350px;
-    width: 350px;
-    outline: solid 1px;
-    transition: background-color 1s ease;
-    display: inline-block;
-}
-
-*/
-
-/*
-.babydiv{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    display: inline-block;
-    margin: 0px, 0px, 0px, 0px;
-}
-*/
-
 a{
     color: white;
     text-decoration: none;
@@ -111,3 +88,5 @@ ul li{
     width: 125px;
     vertical-align: bottom;
 }
+
+
