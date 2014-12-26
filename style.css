@@ -23,13 +23,13 @@ body{
 }
 
 .boxes{
-    /* display: inline-block; */
+    text-align: center;
 }
-
-.boxes p {
+div > p {
     position: relative;
     text-align: center;
-    top: 100px;
+    top: 30%;
+    bottom: 30%;
     transition: color 1s ease;
 }
 
@@ -38,37 +38,29 @@ body{
 	color: white;
 }
 
-#box1{
+.boxrow{
+    width: 100%;
+    text-align: center;
+    height: 350px;
+    margin-top: 15px;
+}
+
+.box1, .box2{
+    vertical-align: top;
     transition: background-color 1s ease;
     font-size: 35px;
     font-family: 'roboto';
-    margin-top: 15px;
-    margin-left: 30%;
-    height: 350px;
+    margin: 5px;
+    height: 100%;
     width: 350px;
     outline: solid 1px;
-    float: left;
+    display: inline-block;
 }
 
-#box2top{
-    margin-top: 14px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    height: 36px;
-    width: 35px;
-    background-color: black;
-    display: inline;
-}
-
-#box2body{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    height: 35px;
-    width: 35px;
-    background-color: black;
-    display: inline;
+.buttonrow{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 a{
@@ -87,6 +79,7 @@ ul li{
     height: 150px;
     width: 125px;
     vertical-align: bottom;
+    display: inline-block;
 }
 
 

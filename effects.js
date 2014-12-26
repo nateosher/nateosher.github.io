@@ -11,7 +11,7 @@ $(document).ready(function(){
 		}
 	);
 
-	$('#box1').hover(
+	$('.box1').hover(
 		function(){
 			$(this).addClass('boxChange');
 		},
@@ -26,6 +26,15 @@ $(document).ready(function(){
 		},
 		function(){
 			$(this).removeClass('boxChange');
+		}
+	);
+
+	$('li').hover(
+		function(){
+			$(this).addClass('boxChange');
+		},
+		function(){
+			$(this).addClass('#');
 		}
 	);
 });
