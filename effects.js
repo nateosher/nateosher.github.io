@@ -31,10 +31,12 @@ $(document).ready(function(){
 
 	$('li').hover(
 		function(){
-			$(this).addClass('boxChange');
-		},
+			$(this).animate({height: '+=100px'}, 500);
+			$(this).addClass('buttonSelect');
+ 		},
 		function(){
-			$(this).addClass('#');
+			$(this).animate({height: '-=100px'}, 500);
+			$(this).removeClass('buttonSelect');
 		}
 	);
 });
