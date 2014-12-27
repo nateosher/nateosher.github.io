@@ -4,15 +4,12 @@ body{
     /* background-color: #B7B8B8; */
 }
 
-.header {
-    color: #3A4446;
+h1 {
+    color: #0f0f0f;
     font-size: 65px;
     font-family: "Roboto";
     text-align: center;
-    vertical-align: middle;
     margin-top: 50px;
-    height: 75px;
-    width: 380px;
     margin-left: auto;
     margin-right: auto;
     transition: color 0.5s ease;
@@ -33,37 +30,16 @@ div > p {
     transition: color 1s ease;
 }
 
-#invisibox{
-    vertical-align: top;
-    font-size: 35px;
-    font-family: 'roboto';
-    margin: 5px;
-    height: 100%;
-    width: 350px;
-    display: inline-block;
-}
-
-#bigBox{
-    font-size: 25px;
-    font-family: 'roboto';
-    margin: 5px;
-    vertical-align: top;
-    position: relative;
-    outline: solid 1px;
-    height: 715px;
-    width: 350px;
-    display: inline-block;
-}
-
-#bigBox > p{
-    top: 0;
-}
-
 .boxrow{
     width: 100%;
     text-align: center;
     height: 350px;
     margin-top: 15px;
+}
+
+div > a{
+    text-decoration: none;
+    color: black;
 }
 
 .box1, .box2{
@@ -73,18 +49,19 @@ div > p {
     font-family: 'roboto';
     margin: 5px;
     height: 100%;
-    width: 350px;
+    width: 25%;
     outline: solid 1px;
     display: inline-block;
 }
 
 .box2{
     background-color: #0f0f0f;
-    transition: background-color 2s ease;
+    color: white;
 }
 
 .box2Change{
     background-color: white;
+    color: black;
 }
 
 .box1Change{
@@ -98,14 +75,19 @@ div > p {
     bottom: 0;
 }
 
+ul{
+    text-align: right;
+    margin-right: 5%;
+}
+
 ul a{
+    text-align: right;
     color: white;
     text-decoration: none;
     margin-top: 15px;
 }
 
 ul li{
-    transition: background-color 0.5s ease;
     text-align: center;
     margin-bottom: -125px;
     margin-left: 5px;
@@ -119,9 +101,4 @@ ul li{
     vertical-align: bottom;
     display: inline-block;
 }
-
-.buttonSelect{
-    background-color: #0f0f0f;
-}
-
 
