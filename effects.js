@@ -13,19 +13,19 @@ $(document).ready(function(){
 
 	$('.box1').hover(
 		function(){
-			$(this).addClass('boxChange');
+			$(this).addClass('box1Change');
 		},
 		function(){
-			$(this).removeClass('boxChange');
+			$(this).removeClass('box1Change');
 		}
 	);
 
-	$('#box3').hover(
+	$('.box2').hover(
 		function(){
-			$(this).addClass('boxChange');
+			$(this).addClass('box2Change');
 		},
 		function(){
-			$(this).removeClass('boxChange');
+			$(this).removeClass('box2Change');
 		}
 	);
 

@@ -10,7 +10,7 @@ body{
     font-family: "Roboto";
     text-align: center;
     vertical-align: middle;
-    margin-top: 75px;
+    margin-top: 50px;
     height: 75px;
     width: 380px;
     margin-left: auto;
@@ -33,9 +33,30 @@ div > p {
     transition: color 1s ease;
 }
 
-.boxChange{
-	background-color: black;
-	color: white;
+#invisibox{
+    vertical-align: top;
+    font-size: 35px;
+    font-family: 'roboto';
+    margin: 5px;
+    height: 100%;
+    width: 350px;
+    display: inline-block;
+}
+
+#bigBox{
+    font-size: 25px;
+    font-family: 'roboto';
+    margin: 5px;
+    vertical-align: top;
+    position: relative;
+    outline: solid 1px;
+    height: 715px;
+    width: 350px;
+    display: inline-block;
+}
+
+#bigBox > p{
+    top: 0;
 }
 
 .boxrow{
@@ -57,13 +78,27 @@ div > p {
     display: inline-block;
 }
 
+.box2{
+    background-color: #0f0f0f;
+    transition: background-color 2s ease;
+}
+
+.box2Change{
+    background-color: white;
+}
+
+.box1Change{
+    background-color: #0f0f0f;
+    color: white;
+}
+
 .buttonrow{
     width: 100%;
     position: fixed;
     bottom: 0;
 }
 
-a{
+ul a{
     color: white;
     text-decoration: none;
     margin-top: 15px;
@@ -86,7 +121,7 @@ ul li{
 }
 
 .buttonSelect{
-    background-color: #3A4446;
+    background-color: #0f0f0f;
 }
 
 
