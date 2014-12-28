@@ -19,4 +19,13 @@ $(document).ready(function(){
 			$(this).animate({height: '-=100px'}, 500);
 		}
 	);
+
+	$('.pug').hover(
+		function(){
+			$(this).addClass('pugChange');
+ 		},
+		function(){
+			$(this).removeClass('pugChange');
+		}
+	);
 });
