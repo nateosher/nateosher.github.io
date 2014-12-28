@@ -2,16 +2,16 @@
 
 $(document).ready(function(){
 
-	$('.box1').hover(
+	$('.box').hover(
 		function(){
-			$(this).addClass('box1Change');
+			$(this).addClass('boxChange');
 		},
 		function(){
-			$(this).removeClass('box1Change');
+			$(this).removeClass('boxChange');
 		}
 	);
 
-	$('li').hover(
+	$('.button').hover(
 		function(){
 			$(this).animate({height: '+=100px'}, 500);
  		},
@@ -28,4 +28,23 @@ $(document).ready(function(){
 			$(this).removeClass('pugChange');
 		}
 	);
+
+	$('.sideMenu').hover(
+		function(){
+			$(this).animate({left: '+=375px'}, 500);
+		},
+		function(){
+			$(this).animate({left: '-=375'}, 500);
+		}
+	);
+
+	$('.sideMenu ul li').hover(
+		function(){
+			$(this).addClass('boxChange');
+		},
+		function(){
+			$(this).removeClass('boxChange');
+		}
+	);
+
 });
