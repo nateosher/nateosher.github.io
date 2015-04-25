@@ -13,10 +13,10 @@ $(document).ready(function(){
 
 	$('.button').hover(
 		function(){
-			$(this).animate({height: '+=100px'}, 500);
+			$(this).animate({height: '+=20px'}, 200);
  		},
 		function(){
-			$(this).animate({height: '-=100px'}, 500);
+			$(this).animate({height: '-=20px'}, 200);
 		}
 	);
 
