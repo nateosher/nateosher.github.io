@@ -29,22 +29,22 @@ $(document).ready(function(){
 		}
 	);
 
-	$('.sideMenu').hover(
-		function(){
-			$(this).animate({left: '+=375px'}, 500);
-		},
-		function(){
-			$(this).animate({left: '-=375'}, 500);
-		}
-	);
+	// $('.sideMenu').hover(
+	// 	function(){
+	// 		$(this).animate({left: '+=375px'}, 500);
+	// 	},
+	// 	function(){
+	// 		$(this).animate({left: '-=375'}, 500);
+	// 	}
+	// );
 
-	$('.sideMenu ul li').hover(
-		function(){
-			$(this).addClass('boxChange');
-		},
-		function(){
-			$(this).removeClass('boxChange');
-		}
-	);
+	// $('.sideMenu ul li').hover(
+	// 	function(){
+	// 		$(this).addClass('boxChange');
+	// 	},
+	// 	function(){
+	// 		$(this).removeClass('boxChange');
+	// 	}
+	// );
 
 });
