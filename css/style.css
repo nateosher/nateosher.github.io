@@ -1,0 +1,97 @@
+#home{
+  margin-top: 50px;
+  margin-bottom: 0px;
+  height: 780px;
+  background: url('http://i.imgur.com/edZFXEB.jpg') no-repeat center center;
+  width: 100%;
+  background-size: cover;
+}
+
+#home-text{
+  font-size: 700%;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px black;
+}
+
+#buttons{
+  width: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+}
+
+.social{
+  display: inline-block;
+  width: 23%;
+  text-shadow: 2px 2px black;
+}
+
+.social-link{
+  color: white;
+}
+.social-link:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+#about{
+  margin-bottom: 0px;
+  height: 780px;
+  /* background: url('https://scontent-lga3-1.xx.fbcdn.net/hphotos-frc3/t31.0-8/10623483_327974490705881_7525018016214716312_o.jpg') no-repeat center center; */
+  background: white;
+  width: 100%;
+  background-size: cover;
+}
+
+#about-text-head{
+  text-align: center;
+  color: black;
+  font-size: 800%;
+}
+
+#about-text-body{
+  font-size: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#portfolio{
+  background: #525252;
+  margin-bottom: 0px;
+  height: 780px;
+  width: 100%;
+  background-size: cover;
+}
+
+#portfolio-text-head{
+  color: black;
+  text-align: center;
+}
+
+#contact{
+  background: black;
+  margin-bottom: 0px;
+  height: 3em;
+}
+
+#bottom-buttons{
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: center;
+  width: 80px;
+  padding-top: 0.5em;
+}
+
+.soc-icons{
+  display: inline-block;
+  transition-duration: 0.5s;
+}
+
+.soc-icons:hover{
+  transition-duration: 0.5s;
+  color: white;
+}
