@@ -90,8 +90,11 @@
   display: inline-block;
   transition-duration: 0.5s;
 }
+.soc-icons a{
+  color: #414141;
+}
 
-.soc-icons:hover{
+.soc-icons:hover a{
   transition-duration: 0.5s;
   color: white;
 }
