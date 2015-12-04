@@ -2,7 +2,7 @@
   margin-top: 50px;
   margin-bottom: 0px;
   height: 780px;
-  background: url('http://i.imgur.com/edZFXEB.jpg') no-repeat center center static;
+  background: url('http://i.imgur.com/edZFXEB.jpg') no-repeat center center fixed;
   width: 100%;
   background-size: cover;
 }
