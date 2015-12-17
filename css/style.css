@@ -72,7 +72,7 @@
   text-align: center;
 }
 
-#portfolio-container{
+#portfolio-container-top{
   margin-left: auto;
   margin-right: auto;
   width: 820px;
@@ -105,6 +105,18 @@
 
 #calc{
   background: url('http://i.imgur.com/H6OG9NZ.png') no-repeat center center;
+  background-size: cover;  
+}
+
+#portfolio-container-bottom{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+}
+
+#weather{
+  background: url('http://i.imgur.com/lcTi4tL.png') no-repeat center center;
   background-size: cover;  
 }
 
