@@ -109,14 +109,20 @@
 }
 
 #portfolio-container-bottom{
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 216px;
+  width: 518px;
 }
 
 #weather{
   background: url('http://i.imgur.com/246GF98.png') no-repeat center center;
+  background-size: cover;  
+  margin-right: 82px;
+}
+
+#twitch{
+  background: url('http://i.imgur.com/8sW4JXA.png') no-repeat center center;
   background-size: cover;  
 }
 
