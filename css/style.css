@@ -112,7 +112,7 @@
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 518px;
+  width: 820px;
 }
 
 #weather{
@@ -124,6 +124,12 @@
 #twitch{
   background: url('http://i.imgur.com/8sW4JXA.png') no-repeat center center;
   background-size: cover;  
+  margin-right: 82px;
+}
+
+#wikipedia{
+  background: url('http://i.imgur.com/exepzXA.png') no-repeat center center;
+  background-size: cover;    
 }
 
 #contact{
