@@ -38,11 +38,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.getElementById("loc" + i.toString()).style.opacity = 0;
 	}
 
-	function Transform(actions, locations, counter){
-		document.getElementById("action").innerHTML = actions[counter];
-		document.getElementById("location").innerHTML = locations[counter];
-	}
-
 	function AnimationLoop(){
 		var prev = (counter > 0 ? counter - 1 : actions.length - 1);
 
