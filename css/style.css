@@ -89,44 +89,6 @@ body{
   margin: 0px 4px 0px 4px;
 }
 
-/* Word swap */
-/*#please{
-  vertical-align: top;
-  position: static;
-}*/
-
-/*
-#subWrapper{
-  margin-top: 130px;
-  width: 100%;
-  font-size: 70px;
-  text-align: center;
+a:visited{
+  color: black;
 }
-
-#sub{
-  margin: 0px 10px 0px 10px;
-}
-
-#subSpan{
-  height: 90px;
-}
-
-
-
-#less{
-  position: fixed;
-  bottom: 5px;
-  right: 10px;
-  font-size: 50px;
-  transition: color 0.1s ease;
-}
-
-WORD SWAP
-
-*/
-
-/*#please > span{
-  float: left;
-  color: red;
-}*/
-

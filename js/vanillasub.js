@@ -3,42 +3,50 @@
 // Inspired by substituteteacher.js by Dan Schlosser
 
 document.addEventListener("DOMContentLoaded", function(){
-	var actions = ["study math",
+	var actions = ["studied math",
 	"intern",
-	"play music",
+	"drum",
 	"make websites",
-	"eat"];
+	"studied (some) philosophy",
+	"like to stay active",
+	"teach"];
 
 	var locations = ["Carleton College",
 	"DoneGood",
-	"the Cave",
 	undefined,
-	"the dining hall"];
+	undefined,
+	"Carleton College",
+	undefined,
+	"City on a Hill Charter School"];
 
 	// Estimate widths
 	var widths = actions.map(function(e){
-		return e.length * 19
+		return e.length*18;
 	});
 
-	var counter = 0;
+	var counter = 1;
 
 	for(var i = 0; i < actions.length; i++){
 		var acSpan = "<span id='ac" + i.toString() + "' class='stretch'>" + actions[i] + "</span>";
 		document.getElementById("action")
 			.insertAdjacentHTML("afterbegin",acSpan);
-		document.getElementById("ac" + i.toString()).style.display = "none";
-		document.getElementById("ac" + i.toString()).style.opacity = 0;
+		if(i !== 0){
+			document.getElementById("ac" + i.toString()).style.display = "none";
+			document.getElementById("ac" + i.toString()).style.opacity = 0;
+		}
 	}
-
-	console.log("start:",widths);
+	// TEST
+	// console.log("start:",widths);
 
 	for(var i = 0; i < locations.length; i++){
 		if(locations[i]){
 			var locSpan = "<span id='loc" + i.toString() + "' class='stretch'>" + locations[i] + "</span>";
 			document.getElementById("location")
 				.insertAdjacentHTML("afterbegin",locSpan);
-			document.getElementById("loc" + i.toString()).style.display = "none";
-			document.getElementById("loc" + i.toString()).style.opacity = 0;
+			if(i !== 0){
+				document.getElementById("loc" + i.toString()).style.display = "none";
+				document.getElementById("loc" + i.toString()).style.opacity = 0;
+			}
 		}
 	}
 
@@ -70,11 +78,10 @@ document.addEventListener("DOMContentLoaded", function(){
 				{ opacity: 1}, { duration : 1500 });
 		}else{
 			document.getElementById("at").style.opacity = 0;
-			document.getElementById("at").style.display = "none";
 		}
 
-		//TEST
-		// widths[counter] = document.getElementById("ac" + counter.toString()).offsetWidth + 5;
+		widths[counter] = document.getElementById("ac" + counter.toString()).offsetWidth;
+		// Test
 		// console.log(widths)
 
 		counter = (counter + 1) % actions.length;
