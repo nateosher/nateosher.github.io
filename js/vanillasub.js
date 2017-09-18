@@ -20,8 +20,12 @@ document.addEventListener("DOMContentLoaded", function(){
 	undefined,
 	"City on a Hill Charter School"];
 
-	var colors = ["#0000FF", "#00FF00", "#FF0000","#DC143C", "#9A32CD", 
-				  "#00EE76", "#7FFF00", "#CDCD00", "#FFA500", "#FF4500"];
+	var warmColors = ["#DC143C", "#EE799F", "#8B2252", "#CD00CD", "#FFB90F",
+					  "#FFA500", "#FF9912", "#FF7F50", "#FF0000", "#800000"];
+					  
+	var coolColors = ["#CD69C9", "#9400D3", "#0000FF", "#3A5FCD", "#1E90FF",
+					  "#00B2EE", "#00CED1", "#03A89E", "#00FF7F", "#008B45",
+					  "#3D9140", "#7CCD7C", ];
 
 	// Estimate widths
 	var widths = actions.map(function(e){
@@ -30,12 +34,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	var counter = 1;
 
+	// Create actions divs
 	for(var i = 0; i < actions.length; i++){
 		var acSpan = "<span id='ac" + i.toString() + "' class='stretch'>" + actions[i] + "</span>";
 		document.getElementById("action")
 			.insertAdjacentHTML("afterbegin",acSpan);
-		var c1 = Math.floor(Math.random()*(colors.length));
-		document.getElementById("ac" + i.toString()).style.color = colors[c1];
+		var c1 = Math.floor(Math.random()*(warmColors.length));
+		document.getElementById("ac" + i.toString()).style.color = warmColors[c1];
 		if(i !== 0){
 			document.getElementById("ac" + i.toString()).style.display = "none";
 			document.getElementById("ac" + i.toString()).style.opacity = 0;
@@ -47,9 +52,8 @@ document.addEventListener("DOMContentLoaded", function(){
 			var locSpan = "<span id='loc" + i.toString() + "' class='stretch'>" + locations[i] + "</span>";
 			document.getElementById("location")
 				.insertAdjacentHTML("afterbegin",locSpan);
-			var c2 = Math.floor(Math.random()*(colors.length));
-			c2 = (c1 == c2 ? c2 + 1 % colors.length : c2);
-			document.getElementById("loc" + i.toString()).style.color = colors[c2];
+			var c2 = Math.floor(Math.random()*(coolColors.length));
+			document.getElementById("loc" + i.toString()).style.color = coolColors[c2];
 			if(i !== 0){
 				document.getElementById("loc" + i.toString()).style.display = "none";
 				document.getElementById("loc" + i.toString()).style.opacity = 0;
@@ -58,9 +62,8 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 
 	function AnimationLoop(){
-		var c1 = Math.floor(Math.random()*(colors.length));
-		var c2 = Math.floor(Math.random()*(colors.length));
-		c2 = (c1 == c2 ? c2 + 1 % colors.length : c2);
+		var c1 = Math.floor(Math.random()*(warmColors.length));
+		var c2 = Math.floor(Math.random()*(coolColors.length));
 		var prev = (counter > 0 ? counter - 1 : actions.length - 1);
 		// Hide previous divs
 		Velocity(document.getElementById("ac" + prev.toString()),
@@ -78,12 +81,12 @@ document.addEventListener("DOMContentLoaded", function(){
 			{ width : newWidth }, {duration : 500 });		
 		Velocity(document.getElementById("ac" + counter.toString()),
 			{ opacity: 1 }, {duration : 1000 });
-		document.getElementById("ac" + counter.toString()).style.color = colors[c1];
+		document.getElementById("ac" + counter.toString()).style.color = warmColors[c1];
 		document.getElementById("ac" + counter.toString()).style.display = "inline";
 		if(locations[counter]){
 			Velocity(document.getElementById("loc" + counter.toString()), 
 				{ opacity: 1 }, {duration : 1000 });
-			document.getElementById("loc" + counter.toString()).style.color = colors[c2];
+			document.getElementById("loc" + counter.toString()).style.color = coolColors[c2];
 			document.getElementById("loc" + counter.toString()).style.display = "inline";
 			document.getElementById("at").style.display = "inline";
 			Velocity(document.getElementById("at"), 
