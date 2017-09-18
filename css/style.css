@@ -11,6 +11,7 @@ body{
   height: 40px;
   font-size: 30px;
   text-align: right;
+  font-weight: bold;
 }
 
 .navText{
@@ -27,7 +28,7 @@ body{
   color: black;
 }
 
-/* Name Header */
+/* Page Name Header */
 #largeNameHolder{
   width: 100%;
   height: 100px;
@@ -66,6 +67,11 @@ body{
   cursor: pointer;
 }
 
+/* ====================
+    HOME PAGE
+   ====================
+*/
+
 /* Word Swap */
 
 .vanish{
@@ -81,7 +87,8 @@ body{
 #headerHolder{
   text-align: center;
   font-size: 40px;
-  margin-top: 100px;
+  font-weight: bold;
+  margin-top: 130px;
 }
 
 #at{
@@ -92,3 +99,50 @@ body{
 a:visited{
   color: black;
 }
+
+/* ====================
+    PROJECTS PAGE
+   ====================
+*/
+
+#projects1{
+  width: 100%;
+  height: 400px;
+}
+
+#projectsBlurb{
+  font-size: 32px;
+  margin-top: 130px;
+  text-align: center;
+}
+
+#navArrow{
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid black;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  right: 50%;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#navArrow:hover{
+  transform: translate(0px, -5px);
+}
+
+#PocketPal{
+  width: 100%;
+  height: 700px;
+}
+
+
+
+
+
+
+
+
