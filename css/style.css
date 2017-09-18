@@ -72,10 +72,11 @@ body{
 
 /* Social icons */
 #social{
-  position: fixed;
-  bottom: 5px;
+  position: absolute;
+  top: 650px;
   left: 10px;
   transition: color 0.3s ease;
+  color: black;
 }
 
 #gitbutton{
@@ -166,9 +167,14 @@ a:visited{
 }
 
 #PocketPal{
-  width: 100%;
-  height: 700px;
+  width: 95.8%;
+  height: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 30px solid #00CED1;
 }
+
+/* PocketPal div */
 
 
 

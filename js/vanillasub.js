@@ -96,8 +96,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 
 		widths[counter] = document.getElementById("ac" + counter.toString()).offsetWidth;
-		// Test
-		// console.log(widths)
 
 		counter = (counter + 1) % actions.length;
 	}
