@@ -54,7 +54,9 @@ body{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before, 
+.hvr-underline-from-left:focus:before, 
+.hvr-underline-from-left:active:before {
   right: 0;
 }
 
@@ -154,10 +156,9 @@ a:visited{
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 40px solid black;
-  position: fixed;
-  bottom: 20px;
+  position: absolute;
+  top: 650px;
   left: 50%;
-  right: 50%;
   cursor: pointer;
   transition: transform 0.5s;
 }
@@ -166,12 +167,47 @@ a:visited{
   transform: translate(0px, -5px);
 }
 
-#PocketPal{
-  width: 95.8%;
-  height: 640px;
-  margin-right: auto;
+/* Design heavily, heavily influenced by the amazing Evan Tarrh:
+evan.land
+*/
+
+.card{
+  position: absolute;
+  width: 60%;
+  height: 60%;
   margin-left: auto;
-  border: 30px solid #00CED1;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 7% 17% 7% 17%;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.card h3{
+  font-size: 40px;
+  font-weight: 1200;
+}
+
+.card p{
+  font-size: 28px;
+  font-weight: 800;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#PocketPal{
+  position: relative;
+  height: 710px;
+  background-color: rgb(255, 157, 53);
+}
+
+#ClickGame{
+  position: relative;
+  height: 710px;
+  background-color: rgb(0, 206, 209);
 }
 
 /* PocketPal div */

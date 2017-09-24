@@ -5,7 +5,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 	var actions = ["studied math",
-	"intern",
+	"interned",
 	"drum",
 	"make websites",
 	"studied (some) philosophy",
