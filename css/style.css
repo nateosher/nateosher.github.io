@@ -11,7 +11,7 @@ body{
   height: 40px;
   font-size: 30px;
   text-align: right;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .navText{
@@ -69,6 +69,7 @@ body{
 
 #largeName{
   font-size: 100px;
+  font-weight: 300;
   margin: 0px 0px 0px 0px;
 }
 
@@ -120,7 +121,7 @@ body{
 #headerHolder{
   text-align: center;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 300;
   margin-top: 130px;
 }
 
@@ -141,11 +142,12 @@ a:visited{
 #projects1{
   width: 100%;
   height: 400px;
+  background-color: white;
 }
 
 #projectsBlurb{
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 300;
   margin-top: 130px;
   text-align: center;
 }
@@ -189,13 +191,13 @@ evan.land
 
 .card h3{
   font-size: 40px;
-  font-weight: 1600;
-  margin-bottom: 0px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .card p{
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 300;
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
@@ -240,13 +242,27 @@ evan.land
 #ClickGame{
   position: relative;
   height: 710px;
-  background-color: #00CED1;
+  background-color: #61d500; /*#00CED1;*/
 }
 
 #Personal{
   position: relative;
   height: 710px;
-  background-color: #ff740d;
+  background-color: #0940ca; /*#ff740d;*/
+}
+
+#footer{
+  background-color: black; /*#252525;*/
+  color: #4e4e4e;
+  font-weight: 300;
+  height: 75px;
+  text-align: center;
+}
+
+#footer p{
+  margin: 0px 0px 0px 0px;
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 /* PocketPal div */

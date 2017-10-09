@@ -27,11 +27,23 @@ document.addEventListener("DOMContentLoaded", function(){
 	function smallify(card){
 		card.style.padding = "0 0 0 0";
 		card.style.boxShadow = "0 7px 14px #050505";
+		return 0;
 	}
 
 	function bigify(card){
 		card.style.padding = "7% 17% 7% 17%";
 		card.style.boxShadow = "none";
+		return 0;
+	}
+
+	function lightsOn(){
+		document.body.style.backgroundColor = 'white';
+		return 0;
+	}
+
+	function lightsOff(){
+		document.body.style.backgroundColor = 'black';
+		return 0;
 	}
 
 	document.addEventListener('scroll', function(){
@@ -39,21 +51,22 @@ document.addEventListener("DOMContentLoaded", function(){
 						window.pageYOffset;
 		if(yCoord < 400){
 			bigify(pocketCard);
+			lightsOn();
 		}else if(yCoord >= 400 && yCoord < 1200){
+			lightsOff();
 			smallify(pocketCard);
 			bigify(clickerCard);
 			bigify(personalCard);
 		}else if(yCoord >= 1200 && yCoord < 1800){
+			lightsOff();
 			bigify(pocketCard);
 			smallify(clickerCard);
 			bigify(personalCard);
 		}else if (yCoord >= 1800){
+			lightsOff();
 			bigify(pocketCard);
 			bigify(clickerCard);
 			smallify(personalCard);
 		}
-		// }else if(yCoord <= 700){
-		// 	pocket.style.border = "50px solid #FF9912;"
-		// }
 	});
 });
