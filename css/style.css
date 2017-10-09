@@ -184,11 +184,13 @@ evan.land
   padding: 7% 17% 7% 17%;
   transition: all 0.2s ease;
   text-align: center;
+  overflow: scroll;
 }
 
 .card h3{
   font-size: 40px;
   font-weight: 1200;
+  margin-bottom: 0px;
 }
 
 .card p{
@@ -196,6 +198,9 @@ evan.land
   font-weight: 800;
   padding-left: 10px;
   padding-right: 10px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .card h3 a{
@@ -208,6 +213,20 @@ evan.land
   color: black;
 }
 
+.tools{
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.toolsPic{
+  height: 50px;
+  margin-top: 0px !important;
+  margin-bottom: -10px;
+  vertical-align: center;
+}
+
 .fa.fa-external-link{
   font-size: 16px;
 }
@@ -215,7 +234,7 @@ evan.land
 #PocketPal{
   position: relative;
   height: 710px;
-  background-color: rgb(255, 157, 53);
+  background-color: #ff3c3c; /*rgb(255, 157, 53)*/
 }
 
 #ClickGame{
