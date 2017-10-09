@@ -189,7 +189,7 @@ evan.land
 
 .card h3{
   font-size: 40px;
-  font-weight: 1200;
+  font-weight: 1600;
   margin-bottom: 0px;
 }
 
@@ -240,7 +240,13 @@ evan.land
 #ClickGame{
   position: relative;
   height: 710px;
-  background-color: rgb(0, 206, 209);
+  background-color: #00CED1;
+}
+
+#Personal{
+  position: relative;
+  height: 710px;
+  background-color: #ff740d;
 }
 
 /* PocketPal div */

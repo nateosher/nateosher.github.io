@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	var pocket = document.getElementById("PocketPal");
 	var pocketCard = document.getElementById("pocket-card");
 	var clickerCard = document.getElementById("clicker-card");
+	var personalCard = document.getElementById("personal-card");
 
 
 	nav.addEventListener("click", function(){
@@ -23,22 +24,33 @@ document.addEventListener("DOMContentLoaded", function(){
 	// 	console.log(yCoord);
 	// });
 
+	function smallify(card){
+		card.style.padding = "0 0 0 0";
+		card.style.boxShadow = "0 7px 14px #050505";
+	}
+
+	function bigify(card){
+		card.style.padding = "7% 17% 7% 17%";
+		card.style.boxShadow = "none";
+	}
+
 	document.addEventListener('scroll', function(){
 		var yCoord = document.documentElement.scrollTop || 
 						window.pageYOffset;
 		if(yCoord < 400){
-			pocketCard.style.padding = "7% 17% 7% 17%"
-			pocketCard.style.boxShadow = "none"
+			bigify(pocketCard);
 		}else if(yCoord >= 400 && yCoord < 1200){
-			pocketCard.style.padding = "0 0 0 0";
-			clickerCard.style.padding = "7% 17% 7% 17%";
-			pocketCard.style.boxShadow = "0 7px 14px #050505";
-			clickerCard.style.boxShadow = "none";
-		}else if(yCoord >= 1200){
-			pocketCard.style.padding = "7% 17% 7% 17%";
-			clickerCard.style.padding = "0 0 0 0";
-			pocketCard.style.boxShadow = "none";
-			clickerCard.style.boxShadow = "0 7px 14px #050505";
+			smallify(pocketCard);
+			bigify(clickerCard);
+			bigify(personalCard);
+		}else if(yCoord >= 1200 && yCoord < 1800){
+			bigify(pocketCard);
+			smallify(clickerCard);
+			bigify(personalCard);
+		}else if (yCoord >= 1800){
+			bigify(pocketCard);
+			bigify(clickerCard);
+			smallify(personalCard);
 		}
 		// }else if(yCoord <= 700){
 		// 	pocket.style.border = "50px solid #FF9912;"
