@@ -186,6 +186,10 @@ evan.land
   padding: 7% 17% 7% 17%;
   transition: all 0.2s ease;
   text-align: center;
+  overflow: hidden;
+}
+
+.card:hover{
   overflow: scroll;
 }
 
