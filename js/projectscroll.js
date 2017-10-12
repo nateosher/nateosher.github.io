@@ -25,6 +25,16 @@ document.addEventListener("DOMContentLoaded", function(){
 	var y=w.innerHeight;
 
 	// TODO: Color text assignment HERE 
+	var colors =     ["#DC143C", "#EE799F", "#CD00CD", "#FFB90F",
+					  "#FFA500", "#FF9912", "#FF7F50", "#FF0000",
+					  "#CD69C9", "#9400D3", "#0000FF", "#3A5FCD", "#1E90FF",
+					  "#00B2EE", "#00CED1", "#03A89E", "#00FF7F", "#008B45",
+					  "#3D9140", "#7CCD7C"];
+
+	for(var i = 0; i < colorTexts.length; i++){
+		colorTexts[i].style.color = colors[Math.floor(Math.random()
+													*colors.length)];
+	}
 
 	pocket.style.height = String(y + 10) + "px";
 	clicker.style.height = String(y + 10) + "px";

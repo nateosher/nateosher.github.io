@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function(){
 	undefined,
 	"City on a Hill Charter School"];
 
-	var warmColors = ["#DC143C", "#EE799F", "#8B2252", "#CD00CD", "#FFB90F",
-					  "#FFA500", "#FF9912", "#FF7F50", "#FF0000", "#800000"];
+	var warmColors = ["#DC143C", "#EE799F", "#CD00CD", "#FFB90F",
+					  "#FFA500", "#FF9912", "#FF7F50", "#FF0000"];
 					  
 	var coolColors = ["#CD69C9", "#9400D3", "#0000FF", "#3A5FCD", "#1E90FF",
 					  "#00B2EE", "#00CED1", "#03A89E", "#00FF7F", "#008B45",
-					  "#3D9140", "#7CCD7C", ];
+					  "#3D9140", "#7CCD7C"];
 
 	// Estimate widths
 	var widths = actions.map(function(e){
