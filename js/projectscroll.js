@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function(){
 	var git	 = document.getElementById("gitbutton");
 	var link = document.getElementById("linkedinbutton");
 	var pocket = document.getElementById("PocketPal");
-	var clicker = document.getElementById("ClickGame");
+	// var clicker = document.getElementById("ClickGame");
 	var personal = document.getElementById("Personal");
 	var pocketCard = document.getElementById("pocket-card");
-	var clickerCard = document.getElementById("clicker-card");
+	// var clickerCard = document.getElementById("clicker-card");
 	var personalCard = document.getElementById("personal-card");
 
 	var cards = document.querySelectorAll(".card");
@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 
 	pocket.style.height = String(y + 10) + "px";
-	clicker.style.height = String(y + 10) + "px";
+	// clicker.style.height = String(y + 10) + "px";
 	personal.style.height = String(y + 10) + "px";
 
 	function whenResized(){
 		x=w.innerWidth;
 		y=w.innerHeight;
 		pocket.style.height = String(y + 10) + "px";
-		clicker.style.height = String(y + 10) + "px";
+		// clicker.style.height = String(y + 10) + "px";
 		personal.style.height = String(y + 10) + "px";
 		for(var i = 0; i < cards.length; i++){
 			cards[i].style.height = "60%";
@@ -68,16 +68,16 @@ document.addEventListener("DOMContentLoaded", function(){
 				lightsOn();
 			}else if(yCoord >= 0.4*y + offset && yCoord < 1.4*y + offset){
 				smallify(pocketCard);
-				bigify(clickerCard);
+				// bigify(clickerCard);
 				bigify(personalCard);
 			}else if(yCoord >= 1.4*y + offset && yCoord < 2.4*y + offset){
 				bigify(pocketCard);
-				smallify(clickerCard);
+				// smallify(clickerCard);
 				bigify(personalCard);
 			}else if (yCoord >= 2.4*y + offset){
 				lightsOff();
 				bigify(pocketCard);
-				bigify(clickerCard);
+				// bigify(clickerCard);
 				smallify(personalCard);
 			}
 		}
@@ -129,16 +129,16 @@ document.addEventListener("DOMContentLoaded", function(){
 			lightsOn();
 		}else if(yCoord >= 0.4*y + offset && yCoord < 1.4*y + offset){
 			smallify(pocketCard);
-			bigify(clickerCard);
+			// bigify(clickerCard);
 			bigify(personalCard);
 		}else if(yCoord >= 1.4*y + offset && yCoord < 2.4*y + offset){
 			bigify(pocketCard);
-			smallify(clickerCard);
+			// smallify(clickerCard);
 			bigify(personalCard);
 		}else if (yCoord >= 2.4*y + offset){
 			lightsOff();
 			bigify(pocketCard);
-			bigify(clickerCard);
+			// bigify(clickerCard);
 			smallify(personalCard);
 		}
 	}
