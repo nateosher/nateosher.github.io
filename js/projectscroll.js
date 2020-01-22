@@ -70,16 +70,18 @@ document.addEventListener("DOMContentLoaded", function(){
 				smallify(pocketCard);
 				// bigify(clickerCard);
 				bigify(personalCard);
-			}else if(yCoord >= 1.4*y + offset && yCoord < 2.4*y + offset){
+			}else if(yCoord >= 1.4*y + offset){// && yCoord < 2.4*y + offset){
 				bigify(pocketCard);
 				// smallify(clickerCard);
-				bigify(personalCard);
-			}else if (yCoord >= 2.4*y + offset){
-				lightsOff();
-				bigify(pocketCard);
-				// bigify(clickerCard);
 				smallify(personalCard);
 			}
+
+			// }else if (yCoord >= 2.4*y + offset){
+			// 	lightsOff();
+			// 	bigify(pocketCard);
+			// 	// bigify(clickerCard);
+			// 	smallify(personalCard);
+			// }
 		}
 	}
 
@@ -134,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		}else if(yCoord >= 1.4*y + offset && yCoord < 2.4*y + offset){
 			bigify(pocketCard);
 			// smallify(clickerCard);
-			bigify(personalCard);
+			smallify(personalCard);
 		}else if (yCoord >= 2.4*y + offset){
 			lightsOff();
 			bigify(pocketCard);
