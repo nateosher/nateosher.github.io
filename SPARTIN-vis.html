@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/SPARTIN-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/heatmaps.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+        <div class="nav-button">
+            <p><a href="SPARTIN.html">Home</a></p>
+        </div>
+        <div class="nav-button">
+            <p>//</p>
+        </div>
+        <div class="nav-button cur-page">
+            <p><a href="SPARTIN-vis.html">Visualizer</a></p>
+        </div>
+        <div class="nav-button">
+            <p>//</p>
+        </div>
+        <div class="nav-button">
+            <p><a href="https://github.com/nateosher/SPARTIN" target="_blank">R Package</a></p>
+        </div>
+    </div>
+    <div id="vis-body">
+        <h1>
+            Visualizer
+        </h1>
+        <div id="canvas-and-options">
+            <div id="vis-options">
+                <h3>Options</h3>
+                <div>Data selection</div>
+                <input type="file" id="cur-data-file">
+                <div class="hfill"></div>
+                <div>Measure selection</div>
+                <select id="measure-dropdown">
+                    <option value="--">--</option>
+                </select>
+                <div class="hfill"></div>
+                <div>Window width</div>
+                <input type="range" id="window-width" min="0" max="80" value="80">
+            </div>
+            <svg id="vis-canvas"></svg> 
+        </div>
+    </div>
+
+    <div id="footer">
+        <p><a href="https://github.com/nateosher">Nate Osher</a> // 
+        <a href="https://bayesrx.github.io/">BayesRx</a> // 
+        <a href="http://www-personal.umich.edu/~jiankang/people.html">Kang Lab</a></p>
+    </div>
+    
+  </body>
+</html>

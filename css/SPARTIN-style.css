@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    padding-left: 15px;
+    /* border: 1px solid black; */
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    /* background-color: black; */
+}
+
+#navbar .nav-button {
+    font-size: 20px;
+    cursor: pointer;
+    /* border-right: 1px solid black; */
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#navbar .nav-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.cur-page{
+    text-decoration: underline;
+}
+
+#canvas-and-options{
+    display: flex;
+}
+
+#home-body{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Lato';
+    min-height: 90vh;
+}
+
+#home-body-content{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+.example-image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.example-image img{
+    width: 400px;
+}
+
+#vis-body{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Lato';
+    min-height: 90vh;
+}
+
+#vis-canvas {
+    width: 80%;
+    height: 600px;
+    border: 2px solid black;
+}
+
+#vis-options{
+    width: 200px;
+    height: 600px;
+    border: 2px solid black;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.hfill{
+    height: 20px
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer p a:visited{
+    color:white;
+}
+
