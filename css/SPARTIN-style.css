@@ -89,6 +89,10 @@ body{
     text-align: center;
 }
 
+#footer p a{
+    color: white;
+}
+
 #footer p a:visited{
     color:white;
 }
