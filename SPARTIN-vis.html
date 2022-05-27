@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/heatmaps.js"></script>
+    <!-- <script src="js/example_download.js"></script> -->
   </head>
   <body>
     <div id="navbar">
@@ -43,6 +44,14 @@
                 <div class="hfill"></div>
                 <div>Window width</div>
                 <input type="range" id="window-width" min="0" max="80" value="80">
+                <div class="hfill"></div>
+                <div class="hfill"></div>
+                <div class="hfill"></div>
+                <p style="color: #8B8B8B">
+                    Curious to see the visualizer in action, but don't have any data? 
+                    <a href='ex_json.json' download="ex_json.json" target="_blank">Here</a> is a simulated example dataset you can use to explore the 
+                    visualizer.
+                </p>
             </div>
             <svg id="vis-canvas"></svg> 
         </div>
