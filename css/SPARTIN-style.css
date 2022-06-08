@@ -6,7 +6,7 @@ body{
     display: flex;
     padding-left: 15px;
     /* border: 1px solid black; */
-    width: 100%;
+    /* width: 100%; */
     font-family: 'Lato', sans-serif;
     /* background-color: black; */
 }
@@ -83,7 +83,7 @@ body{
 }
 
 #footer{
-    width: 100%;
+    /* width: 100%; */
     background-color: black;
     color: white;
     padding: 10px;
