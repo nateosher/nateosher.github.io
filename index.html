@@ -3,34 +3,138 @@
   <head>
     <meta charset="UTF-8">
     <title>Nate Osher</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <!-- <base href='file:///Users/Nate/Documents/Projects/Coding/nateosher.github.io/'> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="js/mainpage.js"></script>
   </head>
 <body>
 
-<div class="start2" id='navbar'>
-  <p class='navText hvr-underline-from-left' id="homenav">  <a href='index.html'> Home </a> </p>
-  <p class='navText hvr-underline-from-left' id="projectsnav"> <a href='projects.html'> Projects </a> </p>
+<div id="navbar">
+    <div id="navbar-name">Nate Osher</div>
+    <div id="navbar-welcome" class="nav-button"><a href="#landing">Background</a></div>
+    <div id="navbar-research" class="nav-button"><a href="#research">Research</a></div>
+    <div id="navbar-contact" class="nav-button"><a href="#contact">Contact</a></div>
 </div>
 
-<div id='largeNameHolder'>
-  <h1 class="start1" id='largeName'>Nate Osher</h1>
+<div id="landing">
+    <div id="headshot-links">
+        <div id="headshot">
+            <img id="headshot-img" src="static/headshot.jpeg" />
+        </div>
+        <div id="headshot-name">
+            Nate Osher
+        </div>
+        <div id="headshot-role">
+            Biostatistics PhD Candidate
+        </div>
+        <div id="headshot-institution">
+            University of Michigan
+        </div>
+        <div id="headshot-buttons">
+            <div class="button-holder">
+                <a href="https://github.com/nateosher" target="_blank">
+                    <i id="github-button" class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <div class="button-holder">
+                <a href="https://scholar.google.com/citations?hl=en&user=rm8DVXsAAAAJ" target="_blank">
+                    <i id="google-scholar-button" class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+
+            <div class="button-holder">
+                <a href="/static/Nate_Osher_CV.pdf" target="_blank">
+                    <i class="ai ai-cv"></i>
+                </a>
+            </div>
+
+        </div>
+    
+    </div>
+    
+    <div id="biography">
+        <div id="bio-summary">
+            <h3>Personal Background</h3>
+            <p>
+                I am a PhD candidate in the University of Michigan department of
+                Biostatistics. My advisors are 
+                <a target="_blank" href="https://bayesrx.github.io/">Dr. Veera Baladandayuthapani</a> 
+                and 
+                <a target="_blank" href="https://sph.umich.edu/faculty-profiles/kang-jian.html">Dr. Jian Kang</a>. 
+                My research primarily involves Bayesian modeling of
+                of spatial cancer pathology imaging data. Among other things, this includes
+                modeling point process data, developing Bayesian selection priors, and 
+                functional data analysis.
+            </p>
+
+        </div>
+    </div>
 </div>
 
-<div id='headerHolder'>I<div id='action' class='vanish'></div><div id='at'>at</div><div id='location' class='vanish'></div></div>
+<div id="research">
+    <div id="research-header">
+        <h3>Publications & Software</h3>
+    </div>
+    <div id="research-cards">
+        <div class="research-card">
+            <div class="research-card-authors">
+                <b>Nathaniel Osher</b>, Jian Kang, Santhoshi Krishnan, Arvind Rao, Veera Baladandayuthapani
+            </div>
+            <div class="research-card-image">
+                <img src="static/spartin-image.png"/>
+            </div>
+            <div class="research-card-title">
+                SPARTIN: a Bayesian method for the quantification and characterization 
+                of cell type interactions in spatial pathology data
+            </div>
+            <div class="research-card-description">
+                The goal of this project was to develop methods to quantify interaction 
+                (i.e. co-localization) between tumor cells and immune cells in melanoma
+                imaging data.
+            </div>
+            <div class="research-card-links">
+                <div class="research-card-link">
+                    <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fgene.2023.1175603/full">Paper</a>
+                </div>
+                <div class="research-card-link">
+                    <a target="_blank" href="https://github.com/bayesrx/SPARTIN">Code</a>
+                </div>
+            </div>
+        </div>
 
-<div id='socialIndex'>
-  <a target="_blank" href="https://github.com/nateosher"><i class='fa fa-github fa-3x' id='gitbutton' aria-hidden='true'></i></a>
-  <a target="_blank" href="https://www.linkedin.com/in/nate-osher-4a4864b2/"><i class='fa fa-linkedin fa-3x' id='linkedinbutton' aria-hidden='true'></i></a>
+        <div class="research-card">
+            <div class="research-card-authors">
+                Maria Masotti, <b>Nathaniel Osher</b>, Joel Eliason, Arvind Rao, Veera Baladandayuthapani
+            </div>
+            <div class="research-card-image">
+                <img src="static/graphical_abstract.png"/>
+            </div>
+            <div class="research-card-title">
+                DIMPLE: An R package to quantify, visualize, and model spatial cellular 
+                interactions from multiplex imaging with distance matrices
+            </div>
+            <div class="research-card-description">
+                The goal of this project was to develop a software package to analyze interaction between
+                cells of different types in multiplex imaging data in a scalable, computationally efficient
+                manner.
+            </div>
+            <div class="research-card-links">
+                <div class="research-card-link">
+                    <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S2666389923002714">Paper</a>
+                </div>
+                <div class="research-card-link">
+                    <a target="_blank" href="https://github.com/nateosher/DIMPLE">Code</a>
+                </div>
+            </div>
+        </div>
+    </div>        
 </div>
-
-<script src="bower_components/velocity/velocity.min.js"></script>
-<script src="js/vanillasub.js"></script>
-
-
-
+<div id="contact">
+    Want to get in touch? Email me at: oshern@umich.edu
+</div>
 
 
 </body>
