@@ -1,1 +1,0 @@
-* Fix display when it is very short and wide
