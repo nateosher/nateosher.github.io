@@ -181,7 +181,7 @@ body{
 
 .research-card-image img:hover {
     transform: scale(1.2);
-    cursor: pointer;
+    /* cursor: pointer; TODO: add research specific page, or expand card */
 }
 
 .research-card-title {
